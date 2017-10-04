@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Guitar_Tuner
+﻿namespace Guitar_Tuner
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
+            Sound sound = new Sound();
+
+            sound.StartDetect(sound.SelectInputDevice());
         }
     }
 }
